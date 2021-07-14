@@ -1,0 +1,75 @@
+// colors
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+$white: hsl(0, 0, 100%);
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+$poppins-normal: 400;
+$poppins-bold: 600;
+
+$open-sans: 'Open Sans', sans-serif;
+$open-sans-normal: 400;
+
+body {
+    font-family: $open-sans;
+    font-weight: $open-sans-normal;
+    font-size: 16px;
+    min-height: 100vh;
+    background: url('../images/bg-mobile.svg') no-repeat center top, $violet;
+    background-size: fill;
+    color: $white;
+    display: grid;
+    place-content: center;
+}
+
+section {
+    padding: 2rem 1.75rem;
+    max-width: 375px;
+}
+.header {
+    img {
+        height: 2rem;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.cta-content {
+    text-align: center;
+    h1 {
+        padding: 1rem 0;
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 6rem;
+        background: $white;
+        border-radius: 2rem;
+        margin-top: 2rem;
+    }
+}
+.footer {
+    padding: 3em 0;
+    text-align: center;
+    ul {
+        li {
+            display: inline-block;
+            height: 1rem;
+            margin: 0 0.25rem;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
